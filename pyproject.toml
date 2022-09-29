@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "fra-rss"
+version = "0.1.0"
+description = "Create an RSS feed from the FRA press releases"
+authors = ["Jeremiah England <englandtuning@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "fra_rss"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Scrapy = "^2.6.3"
+feedgen = "^0.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
