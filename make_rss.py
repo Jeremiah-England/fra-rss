@@ -25,4 +25,4 @@ for line in fileinput.input(encoding="utf-8"):
 directory = "generated"
 os.makedirs(directory, exist_ok=True)
 fg.atom_file(f"{directory}/atom.xml", pretty=True)
-fg.rss_file(f"{directory}/rss", pretty=True)
+fg.rss_file(f"{directory}/rss.xml", pretty=True)
