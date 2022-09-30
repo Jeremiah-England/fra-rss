@@ -1,5 +1,12 @@
 # FRA RSS
 
+RSS and Atom feed of the FRA press releases.
+
+- https://fra-rss.nyc3.cdn.digitaloceanspaces.com/rss.xml
+- https://fra-rss.nyc3.cdn.digitaloceanspaces.com/atom.xml
+
+## Generation
+
 To scrape the website and put the feeds in a `generated/` directory, call the
 `generate.sh` script.
 
