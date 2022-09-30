@@ -31,6 +31,7 @@ The only files I edited or created directly in this repository so far are
 - `README.md`: (obvious).
 - `generate.sh`: Create the Atom and RSS feeds and put them in the `generated` directory.
 - `test_server.sh`: Run a test server to verify that the feed work in your local RSS reader.
+- `upload.py`: Upload the Atom and RSS feeds to the Digital Ocean Space.
 
 The rest of the files were auto-generated with `poetry` and `scrapy`. I did
 reformat some of Scrapy's auto-generated files with BlacScrapy's auto-generated
