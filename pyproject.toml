@@ -11,6 +11,7 @@ packages = [{include = "fra_rss"}]
 python = "^3.10"
 Scrapy = "^2.6.3"
 feedgen = "^0.9.0"
+boto3 = "^1.24.83"
 
 
 [build-system]
