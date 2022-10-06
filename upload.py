@@ -2,10 +2,15 @@ import os
 import json
 import boto3
 
-with open("./secrets.json") as f:
-    secrets = json.load(f)
-    aws_access_key_id = secrets["github-fra-rss"]
-    aws_secret_access_key = secrets["secret"]
+
+aws_access_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
+aws_secret_access_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
+
+if not aws_access_key_id or not aws_secret_access_key:
+    with open("./secrets.json") as f:
+        secrets = json.load(f)
+        aws_access_key_id = secrets["github-fra-rss"]
+        aws_secret_access_key = secrets["secret"]
 
 session = boto3.session.Session()
 client = session.client(
