@@ -27,10 +27,8 @@ jobs:
 
       - name: execute python script
         run: |
-          poetry shell
-          poetry install
           sh generate.sh
-          python upload.py
+          poetry run python upload.py
         env:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

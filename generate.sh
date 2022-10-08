@@ -1,1 +1,1 @@
-scrapy crawl newsroom | python make_rss.py
+poetry run scrapy crawl newsroom | poetry run python make_rss.py
