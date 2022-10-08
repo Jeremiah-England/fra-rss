@@ -31,7 +31,7 @@ jobs:
       - name: execute python script
         run: |
           poetry install
-          dig railroads.dot.gov
+          dig railroads.dot.gov @8.8.8.8
           sh generate.sh
           poetry run python upload.py
         env:
