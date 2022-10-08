@@ -27,6 +27,7 @@ jobs:
 
       - name: execute python script
         run: |
+          poetry install
           sh generate.sh
           poetry run python upload.py
         env:
