@@ -2,10 +2,10 @@
 name: publish-feeds
 
 on:
-  schedule:
-    # https://cron.help/#33_2/6_*_*_*
-    # "At :33 in every 6th hour from 2am through 11pm"
-    - cron: "33 2/6 * * *"
+  # schedule:
+  #   # https://cron.help/#33_2/6_*_*_*
+  #   # "At :33 in every 6th hour from 2am through 11pm"
+  #   - cron: "33 2/6 * * *"
   push:
     branches:
       - 'master'
